@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="icon" href="icon.jpg">
+	<link rel="stylesheet" href="css/main.css">
+	
+    <title>Cupig Level Editor</title>
+  </head>
+  <body>
+	<div id="controls">
+	<input type="number" id="x" value="10"> x <input type="number" id="y"  value="10"> <button id="start">Meke grid</button>
+	</div>
+	<div id="container">
+		<div id="grid">
+		
+		</div>
+		<div id="tiles">
+		 <div data-id="1" class="tile">
+			<img src="tiles/1.png">
+		 </div>
+		 <div data-id="2" class="tile">
+			<img src="tiles/2.png">
+		 </div>
+		 <div data-id="3" class="tile">
+			<img src="tiles/3.png">
+		 </div>
+		 <div data-id="4" class="tile">
+			<img src="tiles/4.png">
+		 </div>
+		 <div data-id="5" class="tile">
+			<img src="tiles/5.png">
+		 </div>
+		 <div data-id="6" class="tile">
+			<img src="tiles/6.png">
+		 </div>
+		 <div data-id="7" class="tile">
+			<img src="tiles/7.png">
+		</div>
+		 <div data-id="8" class="tile">
+			<img src="tiles/8.png">
+		 </div>
+		 <div data-id="9" class="tile">
+			<img src="tiles/9.png">
+		 </div>
+		 <div data-id="11" class="tile">
+			<img src="tiles/11.png">
+		 </div>
+		 <div data-id="0" class="tile selected">
+			<img src="tiles/0.png">
+		 </div>
+		</div>
+		<label>Level array:<br>
+		<textarea id="levelcode" readonly>
+		
+		</textarea>
+		</label>
+	</div>
+    <script src="js/editorscript.js"></script>
+  </body>
+</html>

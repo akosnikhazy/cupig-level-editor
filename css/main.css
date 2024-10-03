@@ -1,0 +1,96 @@
+*{
+	margin:0;padding:0;
+	box-sizing:border-box;
+	color:#333;
+}
+
+html{
+	background: #fbefff 
+	
+}
+
+body{
+	padding-left: 20px;
+	--gridborders: #666;
+}
+
+input[type=number]{
+	width: 60px;
+	padding:6px;
+	border: 1px solid #777;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+}
+button{
+	padding:4px;
+}
+textarea{
+	width: 350px;
+	height:200px;
+}
+
+#controls{
+	padding:20px;
+}
+
+#container{
+	overflow: scroll;
+	width:100%;
+}
+
+#container > div{
+	margin-bottom:20px;
+}
+
+#grid{
+	 white-space: nowrap;
+	 line-height:0;
+	
+	
+}
+#grid div,#grid div img{
+	width:50px;
+	height:50px;
+}
+
+#grid div{
+	display:inline-block;
+	border: 1px solid var(--gridborders);
+	border-left:0;
+	border-top:0;
+	cursor:crosshair;
+	overflow:hidden;
+	background: #333;
+}
+
+#grid div:hover > img{
+	filter: hue-rotate(-45deg);
+	transform: rotate(9deg);
+}
+
+#grid br{
+	display:block;
+	margin:0;
+	height:0;
+}
+
+.tile,.tile > img{
+	width: 60px;
+	height:60px;
+	cursor: pointer;
+	
+}
+
+.tile{
+	margin-left: 5px;
+	display:inline-block;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.selected{
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.selected img{
+	border: 2px solid #880000;
+}
