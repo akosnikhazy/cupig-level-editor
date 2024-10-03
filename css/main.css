@@ -36,6 +36,7 @@ textarea{
 #container{
 	overflow: scroll;
 	width:100%;
+	display:none;
 }
 
 #container > div{
