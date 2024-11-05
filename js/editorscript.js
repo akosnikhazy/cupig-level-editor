@@ -41,7 +41,7 @@ function generateCode()
 	
 	});
 	
-	levelcode.value = `{${rows.join(',')}}`;
+	levelcode.value = `{${rows.join(',\r\n')}}`;
 	
 }
 
