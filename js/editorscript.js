@@ -84,10 +84,10 @@ start.addEventListener("click", function(){
 	gridElement.appendChild(gridImg);
 	
 	// draw the initial grid
-	for(let i = 0; i < _x; i++)
+	for(let i = 0; i < _y; i++)
 	{
 		
-		for(let ii = 0; ii < _y; ii++)
+		for(let ii = 0; ii < _x; ii++)
 		{
 			
 			let newElement = gridElement.cloneNode(true);
